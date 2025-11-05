@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+:root{
+  --accent:#2c9ab7;
+  --bg:#0f1720;
+  --card:rgba(0,0,0,0.45);
+  --muted:#9aa6b2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Kanit', sans-serif;
+  background: url('assets/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color:#e6eef3;
+  -webkit-font-smoothing:antialiased;
+}
+.overlay{
+  background: linear-gradient(180deg, rgba(2,6,12,0.55), rgba(2,6,12,0.55));
+  min-height:100vh;
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:18px 28px;
+  backdrop-filter: blur(4px);
+}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:54px; border-radius:6px; box-shadow: 0 6px 18px rgba(0,0,0,0.6);}
+.nav{margin-left:auto;display:flex;gap:14px;align-items:center}
+.nav a{color:#dbeef6;text-decoration:none;padding:8px 10px;border-radius:6px}
+.hero{
+  padding:56px 28px;
+}
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+.card{background:var(--card);padding:18px;border-radius:10px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+.table{
+  width:100%;
+  border-collapse:collapse;
+  color:#dff6ff;
+}
+.table th, .table td{padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.04)}
+.download-buttons a{
+  display:inline-block;padding:10px 14px;background:var(--accent);color:#042428;border-radius:8px;text-decoration:none;font-weight:700;margin-right:8px;
+}
+.footer{padding:20px;text-align:center;color:var(--muted);font-size:14px;margin-top:28px}
+.small-grid{display:flex;gap:12px;flex-wrap:wrap}
+.small-grid .item{flex:1 1 220px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px}
+@media(max-width:900px){
+  .container{padding:0 12px}
+  .hero{padding:36px 12px}
+  .logo img{height:44px}
+}
